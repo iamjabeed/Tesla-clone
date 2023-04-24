@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const Section = () => {
+const Section = ({ title, description, bgImg, leftBtnText, rightBtnText }) => {
   return (
-    <Wrap>
+    <Wrap bg={bgImg}>
       <ItemText>
-        <h1>Model S</h1>
-        <p>Order Online For Touchless Delivery</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
       </ItemText>
       <Actions>
         <ButtonGroup>
-          <LeftButton>Custom Order</LeftButton>
-          <RightButton>existing inventory</RightButton>
+          <LeftButton>{leftBtnText}</LeftButton>
+          <RightButton>{rightBtnText}</RightButton>
         </ButtonGroup>
         <DownArrow src="/images/down-arrow.svg" />
       </Actions>
@@ -22,7 +22,12 @@ const Section = () => {
 export default Section;
 
 const Wrap = styled.div`
-  background: url(/images/model-s.jpg) no-repeat center center fixed;
+  ${'' /* scroll-snap-align: start; */}
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${(props) => `url("images/${props.bg}")`};
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -41,23 +46,28 @@ const ItemText = styled.div`
 `;
 const ButtonGroup = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 14px;
   margin-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
   @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
 const LeftButton = styled.div`
   background-color: rgba(23, 26, 32, 0.8);
-  height: 45px;
+  height: 40px;
   width: 256px;
+  @media (max-width: 768px) {
+    width: 340px;
+  }
   color: #ffffff;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
-  text-transform: uppercase;
+  border-radius: 4px;
+  ${"" /* text-transform: uppercase; */}
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
