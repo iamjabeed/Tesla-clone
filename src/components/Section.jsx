@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const Section = ({ title, description, bgImg, leftBtnText, rightBtnText }) => {
@@ -11,7 +11,7 @@ const Section = ({ title, description, bgImg, leftBtnText, rightBtnText }) => {
       <Actions>
         <ButtonGroup>
           <LeftButton>{leftBtnText}</LeftButton>
-          <RightButton>{rightBtnText}</RightButton>
+          {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
         </ButtonGroup>
         <DownArrow src="/images/down-arrow.svg" />
       </Actions>
@@ -22,7 +22,7 @@ const Section = ({ title, description, bgImg, leftBtnText, rightBtnText }) => {
 export default Section;
 
 const Wrap = styled.div`
-  ${'' /* scroll-snap-align: start; */}
+  ${"" /* scroll-snap-align: start; */}
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -30,6 +30,7 @@ const Wrap = styled.div`
   background-image: ${(props) => `url("images/${props.bg}")`};
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  ${"" /* background-attachment: fixed; */}
   -o-background-size: cover;
   background-size: cover;
   width: 100vw;

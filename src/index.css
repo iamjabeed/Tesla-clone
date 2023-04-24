@@ -11,10 +11,14 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 html {
   scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
 }
 
 @keyframes animateDown {
