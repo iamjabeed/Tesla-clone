@@ -126,7 +126,7 @@ const BurgerNav = styled.div`
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     padding: 10px 0;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 14px;
     text-transform: uppercase;
 
     @media (max-width: 820px) {
