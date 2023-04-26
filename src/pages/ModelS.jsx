@@ -1,6 +1,7 @@
 import React from "react";
 import CarHome from "../components/CarHome";
 import Interior from "../components/Interior";
+import CarDetails from "../components/CarDetails";
 
 const ModelS = () => {
   return (
@@ -13,6 +14,9 @@ const ModelS = () => {
         rightBtnText="Demo Drive"
       />
       <Interior bgImg="new-interior.jpg" title="Interior of the Future" />
+      <CarDetails bgImg1="/public/images/connected.jpg"
+      bgImg2="/public/images/audio.jpg"
+      bgImg3="/public/images/room-for.jpg" />
     </div>
   );
 };
