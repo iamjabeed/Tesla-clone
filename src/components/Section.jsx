@@ -8,7 +8,7 @@ const Section = ({ title, description, bgImg, leftBtnText, rightBtnText }) => {
       <Fade bottom>
         <ItemText>
           <h1>{title}</h1>
-          <p>{description}</p>
+          {description && <p>{description}</p>}
         </ItemText>
       </Fade>
       <Actions>

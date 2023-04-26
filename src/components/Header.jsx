@@ -13,10 +13,19 @@ const Header = () => {
   // console.log(cars);
   return (
     <Container>
-      <Link to="/">
+      <a href="/">
         <img src="/images/logo.svg" alt="" />
-      </Link>
-      <Menu>{cars && cars.map((car, i) => <Link key={i}>{car}</Link>)}</Menu>
+      </a>
+      <Menu>
+        <Link to={"/models"}>Model S</Link>
+        <Link to={"/model3"}>Model 3</Link>
+        <Link to={"/modelx"}>Model X</Link>
+        <Link to={"/modely"}>Model Y</Link>
+        <Link>Solar Roof</Link>
+        <Link>Solar Panels</Link>
+
+        {/* {cars && cars.map((car, i) => <Link key={i}>{car}</Link>)} */}
+      </Menu>
       <RightMenu>
         <Link>Shop</Link>
         <Link>Account</Link>

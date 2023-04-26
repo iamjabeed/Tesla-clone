@@ -47,6 +47,11 @@ const Home = () => {
         leftBtnText="Order Now"
         rightBtnText="Learn More"
       />
+      <Section
+        title="Accessories"
+        bgImg="accessories.jpg"
+        leftBtnText="Shop Now"
+      />
     </Container>
   );
 };
