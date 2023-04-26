@@ -26,8 +26,8 @@ const App = () => {
           <Route path="/model3" element={<Model3 />} />
           <Route path="/modelx" element={<ModelX />} />
           <Route path="/modely" element={<ModelY />} />
-          
         </Routes>
+
         {/* <Footer /> */}
       </BrowserRouter>
     </>

@@ -5,13 +5,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  color: #393c41;
+  /* color: #393c41; */
+  color: #1f1f1f;
   -ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
+
+
 
 body {
   width: 100%;

@@ -40,7 +40,7 @@ const Header = () => {
             <HiOutlineX size={24} />
           </CustomeClose>
         </CloseWrap>
-        {cars && cars.map((car, i) => <Link key={i}>{car}</Link>)}
+        {cars && cars.map((car, i) => <Link key={i} to={"/"}>{car}</Link>)}
         <Link>Existing Inventory</Link>
         <Link>Used Inventory</Link>
         <Link>Trade In</Link>
@@ -76,12 +76,13 @@ const Menu = styled.div`
     text-transform: uppercase;
     font-weight: 500;
     font-size: 15px;
+    color:#1f1f1f;
     padding: 6px 10px;
     white-space: nowrap;
     transition: background 0.4s ease-in-out;
   }
   a:hover {
-    background: rgba(112, 128, 144, 0.4);
+    background: rgba(132, 148, 144, 0.4);
   }
 
   @media (max-width: 820px) {
@@ -98,9 +99,10 @@ const RightMenu = styled.div`
     font-weight: 500;
     font-size: 15px;
     padding: 6px 10px;
+    color:#1f1f1f;
   }
   a:hover {
-    background: rgba(112, 128, 144, 0.4);
+    background: rgba(132, 148, 144, 0.4);
   }
 
   @media (max-width: 520px) {
