@@ -14,9 +14,9 @@ const ModelS = () => {
         rightBtnText="Demo Drive"
       />
       <Interior bgImg="new-interior.jpg" title="Interior of the Future" />
-      <CarDetails bgImg1="/public/images/connected.jpg"
-      bgImg2="/public/images/audio.jpg"
-      bgImg3="/public/images/room-for.jpg" />
+      <CarDetails bgImg1="/images/connected.jpg"
+      bgImg2="/images/audio.jpg"
+      bgImg3="/images/room-for.jpg" />
     </div>
   );
 };
