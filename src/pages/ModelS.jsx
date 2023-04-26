@@ -5,7 +5,7 @@ import CarDetails from "../components/CarDetails";
 
 const ModelS = () => {
   return (
-    <div>
+    <>
       <CarHome
         title="Model S"
         description="Plaid"
@@ -17,7 +17,7 @@ const ModelS = () => {
       <CarDetails bgImg1="/images/connected.jpg"
       bgImg2="/images/audio.jpg"
       bgImg3="/images/room-for.jpg" />
-    </div>
+    </>
   );
 };
 

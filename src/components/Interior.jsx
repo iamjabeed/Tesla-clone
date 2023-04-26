@@ -6,9 +6,9 @@ const Interior = ({ bgImg, title }) => {
   return (
     <Wrap bg={bgImg}>
       <Fade bottom>
-        <ItemText>
+       {title && <ItemText>
           <h1>{title}</h1>
-        </ItemText>
+        </ItemText>}
       </Fade>
     </Wrap>
   );

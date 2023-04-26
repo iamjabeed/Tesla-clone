@@ -50,7 +50,9 @@ const CarDetails = ({ bgImg1, bgImg2, bgImg3 }) => {
             <Fade bottom>
               <h1>Room for Everything</h1>
               <p>
-              With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and your luggage too. Compare Models
+                With front and rear trunks and fold-flat seats you can fit your
+                bike without taking the wheel off—and your luggage too. Compare
+                Models
               </p>
             </Fade>
           </Text>
@@ -95,7 +97,7 @@ const Car = styled.div`
   width: 520px;
   @media (max-width: 768px) {
     width: 100%;
-    padding:20px;
+    padding: 20px;
   }
   img {
     width: 100%;
@@ -107,8 +109,8 @@ const Text = styled.div`
 
   display: flex;
   flex-direction: column;
-  ${'' /* justify-content: center; */}
-  ${'' /* align-items: center; */}
+  ${"" /* justify-content: center; */}
+  ${"" /* align-items: center; */}
   gap: 01rem;
   padding: 0 90px;
   margin-top:5rem;
@@ -121,8 +123,10 @@ const Text = styled.div`
     color: white;
     font-size: 14px;
   }
-  ${'' /* @media (max-width: 768px) {
-    ${'' /* width: 260px; */}
+  ${
+    "" /* @media (max-width: 768px) {
+    ${'' /* width: 260px; */
+  }
 
     h1 {
     color: white;
@@ -133,5 +137,5 @@ const Text = styled.div`
     color: white;
     font-size: 12px;
   }
-  } */}
+
 `;
