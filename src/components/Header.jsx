@@ -32,6 +32,11 @@ const Header = () => {
           </CustomeClose>
         </CloseWrap>
         {cars && cars.map((car, i) => <Link key={i}>{car}</Link>)}
+        <Link>Existing Inventory</Link>
+        <Link>Used Inventory</Link>
+        <Link>Trade In</Link>
+        <Link>Shop</Link>
+        <Link>Account</Link>
       </BurgerNav>
     </Container>
   );
@@ -106,10 +111,10 @@ const BurgerNav = styled.div`
   display: flex;
   flex-direction: column;
   ${"" /* justify-content: space-between;  */}
-
-  width:240px;
+  overflow-y: scroll;
+  width: 240px;
   padding: 0 20px;
-  gap: 20px;
+  gap: 14px;
   z-index: 1;
   transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
   transition: transform 0.2s ease;
@@ -132,5 +137,5 @@ const CloseWrap = styled.div`
   cursor: pointer;
 `;
 const CustomeClose = styled.div`
-  margin-top: 20px;
+  margin-top: 14px;
 `;

@@ -6,6 +6,11 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   color: #393c41;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -17,7 +22,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
