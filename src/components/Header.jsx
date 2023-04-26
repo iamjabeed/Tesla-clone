@@ -16,15 +16,7 @@ const Header = () => {
       <Link to="/">
         <img src="/images/logo.svg" alt="" />
       </Link>
-
-      <Menu>
-        <Link>Model S</Link>
-        <Link>Model S</Link>
-        <Link>Model S</Link>
-        <Link>Model S</Link>
-        <Link>Model S</Link>
-        <Link>Model S</Link>
-      </Menu>
+      <Menu>{cars && cars.map((car, i) => <Link key={i}>{car}</Link>)}</Menu>
       <RightMenu>
         <Link>Shop</Link>
         <Link>Account</Link>
@@ -39,14 +31,7 @@ const Header = () => {
             <HiOutlineX size={24} />
           </CustomeClose>
         </CloseWrap>
-        <Link>Model s</Link>
-        <Link>Model s</Link>
-        <Link>Model s</Link>
-        <Link>Model s</Link>
-        <Link>Model s</Link>
-        <Link>Model s</Link>
-        <Link>Model s</Link>
-        <Link>Model s</Link>
+        {cars && cars.map((car, i) => <Link key={i}>{car}</Link>)}
       </BurgerNav>
     </Container>
   );
