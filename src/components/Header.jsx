@@ -3,8 +3,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import { HiMenuAlt1, HiOutlineX } from "react-icons/hi";
+
+import { useSelector } from "react-redux";
+import { selectCars } from "../utils/carSlice";
 const Header = () => {
   const [showBurger, setShowBurger] = useState(false);
+
+  const cars = useSelector(selectCars);
+  // console.log(cars);
   return (
     <Container>
       <Link to="/">
@@ -120,8 +126,8 @@ const BurgerNav = styled.div`
   padding: 0 20px;
   gap: 20px;
   z-index: 1;
-  transform: ${(props) => (props.show ? "translateX(100%)" : "translateX(0)")};
-  transition: transform 0.3s ease;
+  transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
+  transition: transform 0.2s ease;
   a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     padding: 10px 0;
