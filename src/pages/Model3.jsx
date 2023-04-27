@@ -1,6 +1,7 @@
 import React from "react";
 import CarHome from "../components/CarHome";
 import Interior from "../components/Interior";
+import Footer from "../components/Footer";
 
 const Model3 = () => {
   return (
@@ -14,6 +15,7 @@ const Model3 = () => {
       />
       <Interior bgImg="model-3-hero-a.jpg" />
       <Interior bgImg="Model-3-Performance-Hero-Desktop-LHD.jpg" />
+      <Footer />
     </>
   );
 };

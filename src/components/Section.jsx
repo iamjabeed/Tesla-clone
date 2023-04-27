@@ -65,7 +65,7 @@ const LeftButton = styled.div`
   height: 40px;
   width: 256px;
   @media (max-width: 768px) {
-    width: 340px;
+    width: 80vw;
   }
   color: #ffffff;
   text-align: center;

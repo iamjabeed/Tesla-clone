@@ -88,7 +88,7 @@ const Stats = styled.div`
   justify-content: space-between;
   margin-bottom: 30px;
   width: 500px;
-  ${'' /* border: 2px solid red; */}
+  ${"" /* border: 2px solid red; */}
 
   @media (max-width: 750px) {
     width: 320px;
@@ -156,7 +156,7 @@ const LeftButton = styled.div`
   width: 256px;
 
   @media (max-width: 768px) {
-    width: 320px;
+    width: 80vw;
     font-size: 14px;
   }
   color: #ffffff;

@@ -21,7 +21,7 @@ const Header = () => {
         <Link to={"/model3"}>Model 3</Link>
         <Link to={"/modelx"}>Model X</Link>
         <Link to={"/modely"}>Model Y</Link>
-        <Link>Solar Roof</Link>
+        <Link to={"/solarroof"}>Solar Roof</Link>
         <Link>Solar Panels</Link>
 
         {/* {cars && cars.map((car, i) => <Link key={i}>{car}</Link>)} */}
